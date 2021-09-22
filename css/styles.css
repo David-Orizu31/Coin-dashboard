@@ -1,0 +1,70 @@
+.img-logo {
+    width: 150px;
+    height: 30px;
+}
+
+@media (max-width:780px) {
+    .img-logo {
+        width: 90px;
+        height: 20px;
+    }
+}
+
+.bg-dashboard {
+    background-color: #176af3;
+}
+
+.btn-success.deposit {
+    border-radius: 0px;
+    margin-top: 15px;
+}
+
+.silver {
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+.star-icon {
+    margin-left: 70px;
+}
+
+.timer-icon {
+    margin-left: 10px;
+}
+
+.time-update {
+    font-size: 13px;
+}
+
+.time-update span {
+    margin: 0px 5px 0px 5px;
+}
+
+.btn-sell {
+    border-radius: 0px;
+    width: 200px;
+}
+
+@media (max-width:480px) {
+    .btn-sell {
+        width: 130px;
+        font-size: 12px !important;
+    }
+}
+
+.buy-sell-list {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.buy-sell-list li {
+    margin: 0px 10px 0px 10px;
+}
+
+.sell-menu {
+    width: 300px;
+}
+
+.invest-span {
+    font-size: 12px;
+}
