@@ -388,10 +388,10 @@ tt=display_c();
                                 <li class="nav-item dropdown no-arrow">
                                     <a class="nav-link dropdown-toggle btn btn-outline-danger btn-sell" href="#" id="sellDropdown" role="button"
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                          <span>SELL <i class="material-icons down">arrow_downward</i> 24.102</span>
+                                          <span>SELL <i class="material-icons down">arrow_downward</i> </span>
                                     </a>
                                     <!-- Dropdown - User Information -->
-                                    <div class="dropdown-menu sell-menu dropdown-menu-right shadow animated--grow-in"
+                                    <div id="Dropdown" class="dropdown-menu sell-menu dropdown-menu-right shadow animated--grow-in"
                                         aria-labelledby="sellDropdown">
                                         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                             <li class="nav-item" role="presentation">
@@ -442,10 +442,10 @@ tt=display_c();
                                 <li class="nav-item dropdown no-arrow" style="list-style-type: none;">
                                     <a class="nav-link dropdown-toggle btn btn-outline-success btn-sell" href="#" id="buyDropdown" role="button"
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                          <span>BUY <i class="material-icons down">arrow_downward</i> 24.102</span>
+                                          <span>BUY <i class="material-icons down">arrow_downward</i> </span>
                                     </a>
                                     <!-- Dropdown - User Information -->
-                                    <div class="dropdown-menu sell-menu dropdown-menu-right shadow animated--grow-in"
+                                    <div id="Dropdown" class="dropdown-menu sell-menu dropdown-menu-right shadow animated--grow-in"
                                         aria-labelledby="buyDropdown">
                                         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                             <li class="nav-item" role="presentation">
@@ -535,17 +535,40 @@ var counter = 60;
   </div>
 
                      <br>
-                     <!-- TradingView Chart BEGIN -->
-<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-<script type="text/javascript">
-var tradingview_embed_options = {};
-tradingview_embed_options.width = '100%';
-tradingview_embed_options.height = '400';
-tradingview_embed_options.chart = 'bYcuOdRz';
-new TradingView.chart(tradingview_embed_options);
-</script>
-<p><a href="https://www.tradingview.com/chart/LI/bYcuOdRz-LI-Auto-reduced-delivery-outlook-for-Q3/">LI Auto reduced delivery outlook for Q3</a> by <a href="https://www.tradingview.com/u/CryptoFundManager/">CryptoFundManager</a> on <a href="https://www.tradingview.com/">TradingView.com</a></p>
-<!-- TradingView Chart END -->
+<!-- TradingView Widget BEGIN -->
+<div class="table-responsive">
+<div class="tradingview-widget-container">
+    <div id="tradingview_e54e9"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BTCUSDT/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">BTCUSDT Chart</span></a> by TradingView</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+    new TradingView.widget(
+    {
+    "width": 980,
+    "height": 610,
+    "symbol": "BINANCE:BTCUSDT",
+    "interval": "D",
+    "timezone": "Etc/UTC",
+    "theme": "dark",
+    "style": "3",
+    "locale": "en",
+    "toolbar_bg": "#f1f3f6",
+    "enable_publishing": false,
+    "withdateranges": true,
+    "allow_symbol_change": true,
+    "container_id": "tradingview_e54e9"
+  }
+    );
+    </script>
+
+    <style>
+        #tradingview_e54e9 {
+            width: 100% !important;
+        }
+    </style>
+  </div>
+</div>
+  <!-- TradingView Widget END -->
 
                     <!-- Content Row -->
                     
@@ -612,6 +635,12 @@ new TradingView.chart(tradingview_embed_options);
     <!-- Page level custom scripts -->
     <!-- <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script> -->
+
+    <!-- <script>
+                document.getElementById("Dropdown").addEventListener('click', function (event) {
+            event.stopPropagation();
+        });
+    </script> -->
 
 </body>
 
