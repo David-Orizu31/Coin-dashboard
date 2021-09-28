@@ -114,4 +114,53 @@
         padding: 5px;
         margin-top: 10px;
     }
+    .widget-bottom {
+       margin: 0px !important;
+    }  
+
+}
+
+.widget-bottom {
+    background-color: #1b1b1b;
+    margin: 40px;
+    padding: 20px;
+    min-height: 300px;
+}
+
+.widget-table {
+    color: white;
+    font-size: 11px;
+}
+
+.tab-link {
+    color: whitesmoke;
+    background-color: gray;
+    margin-right: 20px;
+}
+
+@media (max-width:480px) {
+    .tab-link {
+        margin-bottom: 10px;
+    }
+}
+
+.tab-link:hover {
+    background-color: cadetblue;
+    color: white;
+}
+
+.btn-outline-white {
+    color: white;
+    border: 1px solid white;
+    font-size: 10px;
+    padding: 3px !important;
+}
+
+.payouts {
+   color: rgb(214, 9, 9);
+}
+
+.cancel-all {
+    font-size: 10px;
+    padding: 2px !important;
 }

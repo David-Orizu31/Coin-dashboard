@@ -582,6 +582,149 @@ var counter = 60;
 </div>
   <!-- TradingView Widget END -->
 
+     <div class="widget-bottom">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link tab-link active" id="pills-open-tab" data-toggle="pill" href="#pills-open" role="tab" aria-controls="pills-open" aria-selected="true">Open Orders</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link tab-link" id="pills-pending-tab" data-toggle="pill" href="#pills-pending" role="tab" aria-controls="pills-pending" aria-selected="false">Pending Orders</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link tab-link" id="pills-closed-tab" data-toggle="pill" href="#pills-closed" role="tab" aria-controls="pills-closed" aria-selected="false">Closed Orders</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane show active" id="pills-open" role="tabpanel" aria-labelledby="pills-open-tab">
+              <div class="table-responsive">
+                <table class="table widget-table">
+                    <thead>
+                        <tr>
+                            <th>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                    </label>
+                                  </div>
+                            </th>
+                            <th>ID</th>
+                            <th>OpenTime</th>
+                            <th>Type</th>
+                            <th>Investment</th>
+                            <th>Leveraged</th>
+                            <th>Symbol</th>
+                            <th>OpenPrice</th>
+                            <th>Stop Loss</th>
+                            <th>Take Profit</th>
+                            <th>CurrentPrice</th>
+                            <th>Swap</th>
+                            <th>Payout</th>
+                            <th>OpenPNL</th>
+                            <th>Edit</th>
+                            <th>Close</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                    </label>
+                                  </div>
+                            </td>
+                            <td>9710805</td>
+                            <td>SEP 28, 11:08AM</td>
+                            <td>BUY</td>
+                            <td>£40.00</td>
+                            <td>£400.00</td>
+                            <td><span class="btn btn-outline-white">BTC/USD</span></td>
+                            <td>41810.22</td>
+                            <td>37665.20(£40.00)</td>
+                            <td>83700.44(£400.00)</td>
+                            <td>41540.93</td>
+                            <td>£0.00</td>
+                            <td class="payouts">£33.04</td>
+                            <td class="payouts">-£6.71</td>
+                            <td><i class="fas fa-edit"></i></td>
+                            <td><i class="fas fa-times-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                    </label>
+                                  </div>
+                            </td>
+                            <td>9710805</td>
+                            <td>SEP 28, 11:08AM</td>
+                            <td>BUY</td>
+                            <td>£40.00</td>
+                            <td>£400.00</td>
+                            <td><span class="btn btn-outline-white">BTC/USD</span></td>
+                            <td>41810.22</td>
+                            <td>37665.20(£40.00)</td>
+                            <td>83700.44(£400.00)</td>
+                            <td>41540.93</td>
+                            <td>£0.00</td>
+                            <td class="payouts">£33.04</td>
+                            <td class="payouts">-£6.71</td>
+                            <td><i class="fas fa-edit"></i></td>
+                            <td><i class="fas fa-times-circle"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="tab-pane" id="pills-pending" role="tabpanel" aria-labelledby="pills-pending-tab">
+            <div class="table-responsive">
+                <table class="table widget-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Open Time</th>
+                            <th>Closed Time</th>
+                            <th>Type</th>
+                            <th>Investment</th>
+                            <th>Symbol</th>
+                            <th>Open Price</th>
+                            <th>Stop Loss</th>
+                            <th>Take Profit</th>
+                            <th>Status</th>
+                            <th><span class="btn btn-info cancel-all">Cancel All</span></th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        <div class="tab-pane" id="pills-closed" role="tabpanel" aria-labelledby="pills-closed-tab">
+            <div class="table-responsive">
+                <table class="table widget-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>OpenTime</th>
+                            <th>Type</th>
+                            <th>Investment</th>
+                            <th>Leveraged</th>
+                            <th>Symbol</th>
+                            <th>OpenPrice</th>
+                            <th>Close Price</th>
+                            <th>Stop Loss</th>
+                            <th>Take Profit</th>
+                            <th>Swap</th>
+                            <th>Closed By</th>
+                            <th>Profit/Loss</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+      </div>
+    </div>
+
                     <!-- Content Row -->
                     
                 </div>
